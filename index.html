@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Barn House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+          rel="stylesheet"
+          type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+
+    </style>
+</head>
+<body class="font-poppins">
+
+<header>
+
+    
+    <div class="navbar container mx-auto bg-base-100">
+        
+        <div class="navbar-center">
+           
+                 <div class="flex" >       
+                   
+<div class="flex justify-center items-center">
+    <div class="relative inline-block">
+
+        <span class="badge badge-primary bg-[#ABEF5F] text-black rounded-full w-10 h-10 flex items-center justify-center border-[#ABEF5F]">
+           
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd"
+                      d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                      clip-rule="evenodd"/>
+            </svg>
+        </span>
+    </div>
+</div>
+
+                    <a class="btn btn-ghost font-bold text-3xl">Rinterio</a>
+            </div>
+           
+        </div>
+
+
+        <div class="navbar-end">
+            <div class="dropdown">
+                <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow lg:hidden">
+                    <li><a class="">Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+            <!-- Menu Items for Large Screens -->
+            <div class="font-3xl hidden lg:flex lg:space-x-4">
+                <a class="text-[#494949] font-semibold">Home</a>
+                <a class="text-[#737373]">Services</a>
+                <a class="text-[#737373]">Portfolio</a>
+                <a class="text-[#737373]">Blogs</a>
+                <a class="text-[#737373]">Contact us</a>
+            </div>
+        </div>
+
+
+        <div class="navbar-end"> 
+           <div class="hidden lg:block">
+            <button class="btn btn-circle bg-white text-black border-none shadow-md hover:bg-gray-100">
+              <div>
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+            <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+    </button>
+
+    <button class="btn btn-circle bg-white text-black border-none shadow-md hover:bg-gray-100">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6">
+            <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/>
+        </svg>
+              </div>
+               <div class="hidden lg:block">
+                <button class="btn bg-[#ABEF5F] text-black text-xl font-bold w-50 h-10 rounded-3xl flex items-center space-x-2 ">
+                    <span>Book Consult</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10"
+                         style="transform: rotate(15deg);">
+                        <path fill-rule="evenodd"
+                              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm.53 5.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.72-1.72v6.89a.75.75 0 0 0 1.5 0v-6.89l1.72 1.72a.75.75 0 1 0 1.06-1.06l-3-3Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+               </div>
+                </button>
+           </div>
+
+                <!--   Hambuger Menu Icon -->
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
+                    <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                        <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7"/>
+                    </svg>
+                </div>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+</header>
+
+
+<main>
+
+    <section class="banner">
+        <div>
+            <div class="container mx-auto flex justify-center items-center p-10">
+                <img src="assets/banner.png" alt="Banner Image">
+            </div>
+            <div class="font-bold text-center p-8 shadow-lg">
+                <h1 class="text-5xl mb-4">A barn house of this design has a <br>
+                    striking appearance</h1>
+                <p class="text-[#494949] text-sm">
+                    The house design blends modern minimalism with rustic charm, featuring clean lines, natural
+                    materials, and open spaces. It combines functionality<br>
+                    and aesthetics, offering a cozy yet contemporary living environment.
+                </p>
+                <br>
+
+
+                <button class="btn bg-[#ccf59d] text-black text-xl font-bold w-50 h-15 rounded-3xl justify-end space-x-2">
+                    <div class="flex items-center space-x-2">
+                    </div>
+                   <span>View Details</span>
+                    <div class="flex items-center justify-center bg-[#ABEF5F] rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                             class="text-black w-8 h-8">
+                            <path fill-rule="evenodd"
+                                  d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                  clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container p-15 m-auto">
+        <div class="container mx-auto grid grid-cols-12 gap-8 w-full h-full ">
+            <div class="bg-white col-start-1 col-span-4 m-auto">
+               <h1 class="text-2xl font-bold">Welcome to Houseplans!</h1>
+               <p class="text-sm">Find your dream home today!</p>
+                <span class="text-sm">Search from rearly 40,000 plans</span>
+            </div>
+            <div class="bg-white h-full w-full col-start-5 col-span-4 m-auto p-10">
+               <img src="assets/1000_F_572058120_Va2rdKuXMB9YXbSiMfKPPSt4juxasUNt.jpg">
+            </div>
+           <div class="col-start-9 col-span-4 m-auto p-10">
+            <p class="text-2xl font-bold">Know Your Plan Number?</p>
+            <span class="text-sm">Search for plans by plan number</span>
+            <div class="bg-white"><label class="input input-bordered flex justify-between items-center gap-2">
+             <input type="text" class="text-sm" placeholder="Search Plan Number" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  class="h-4 w-4 opacity-70">
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                    clip-rule="evenodd" />
+                </svg>
+           </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="bg-white pb-28">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Left side: Icon and text -->
+                <div class="flex flex-col justify-center items-start p-4 space-y-8">
+                    <img src="assets/Vector.png" alt="Decorative Vector" class="w-32 mb-4 hidden lg:block">
+                    <button class="btn btn-outline text-gray-600 text-xl font-bold rounded-full flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                             stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                           d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/>
+                        </svg>
+                        <span>About us</span>
+                    </button>
+                    <div class="space-y-8">
+                        <h1 class="text-3xl font-bold">We design thoughtful, <br> liveable spaces</h1>
+                        <p class="text-base font-light">We design thoughtful, livable spaces that seamlessly blend
+                            functionality and style, creating environments where comfort and elegance thrive.</p>
+    
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border flex items-center p-4 rounded-lg shadow-md">
+                                <img src="assets/commercial.png" alt="Commercial" class="w-24 h-24 mr-4 flex-shrink-0">
+                                <div class="collapse-title text-xl font-medium">
+                                    Commercial
+                                    <span class="block text-sm font-normal text-gray-600 mt-1">We craft innovative commercial spaces that enhance functionality, attract clients, and drive business success.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <div tabindex="0" class="collapse collapse-plus border-base-300 bg-base-200 border flex items-center p-4 rounded-lg shadow-md">
+                                <img src="assets/residential.png" alt="Residential" class="w-24 h-24 mr-4 flex-shrink-0">
+                                <div class="collapse-title text-xl font-medium">
+                                    Residential
+                                    <span class="block text-sm font-normal text-gray-600 mt-1">We create inviting residential spaces that balance comfort, style, and functionality for everyday living.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Right side: Image -->
+                <div class="flex justify-center items-center p-4">
+                    <img src="assets/Rectangle.png" alt="Decorative Rectangle" class="w-full max-w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="p-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Box 1 -->
+          <div class="bg-white h-40 flex flex-col items-center justify-center rounded-2xl p-4">
+            <div class="text-4xl mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+              </svg>
+            </div>
+            <div class="text-2xl font-bold">235+</div>
+            <span class="text-sm text-gray-600 mt-1">Happy Client Review</span>
+          </div>
+      
+          <!-- Box 2 -->
+          <div class="bg-white h-40 flex flex-col items-center justify-center rounded-2xl p-4">
+            <div class="text-4xl mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+              </svg>
+            </div>
+            <div class="text-2xl font-bold">50+</div>
+            <span class="text-sm text-gray-600 mt-1">Work Departments</span>
+          </div>
+      
+          <!-- Box 3 -->
+          <div class="bg-white h-40 flex flex-col items-center justify-center rounded-2xl  p-4">
+            <div class="text-4xl mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+              </svg>
+            </div>
+            <div class="text-2xl font-bold">30k+</div>
+            <span class="text-sm text-gray-600 mt-1">Our Happy Client</span>
+          </div>
+      
+          <!-- Box 4 -->
+          <div class="bg-white h-40 flex flex-col items-center justify-center rounded-2xl p-4">
+            <div class="text-4xl mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                  </svg>
+                  
+                    </div>                
+                <div class="text-xl font-medium">307+</div>
+                 <span class="block text-sm font-normal text-gray-600 mt-1">Staff Members</span>
+             </div>
+            </div>
+        </section>
+
+    <!-- <section class="">
+        <div class="border-4 border-yellow-400 container mx-auto grid grid-cols-4 gap-8 p-10">
+            <div class="bg-white h-40 col-span-1 rounded-2xl">
+                <div class="border-4 border-purple-400">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 mb-2">
+               <path stroke-linecap="round" stroke-linejoin="round"
+                     d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+              </svg>
+              <div class="text-xl font-medium">235+</div>
+               <span class="block text-sm font-normal text-gray-600 mt-1">Happy Client Review</span>
+              </div></div>
+            <div class="bg-white h-40 col-span-1 rounded-2xl"><div class="border-4 border-blue-800 ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="size-6 mb-2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"/>
+                 </svg>
+                   <div class="text-xl font-medium">50+</div>
+                 <span class="block text-sm font-normal text-gray-600 mt-1">Work Departments</span>
+              </div></div>
+            <div class="bg-white h-40 col-span-1 rounded-2xl"><div class="border-4 border-pink-800 ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                  </svg>
+                  
+             <div class="text-xl font-medium">30k+</div>
+             <span class="block text-sm font-normal text-gray-600 mt-1">Our Happy Client</span>
+            </div></div>
+            <div class="bg-white h-40 col-span-1 rounded-2xl"><div class="border-4 border-purple-800 ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                  </svg>                 
+            <div class="text-xl font-medium">307+</div>
+             <span class="block text-sm font-normal text-gray-600 mt-1">Staff Members</span>
+         </div></div>
+        </div>
+    </section> -->
+
+
+<section>
+    <!-- Heading Section -->
+    <div class="container mx-auto">
+        <div class="flex flex-col items-center mt-10">
+            <button class="btn text-[#494949] text-sm font-bold w-50 h-10 rounded-3xl flex items-center space-x-2  bg-white shadow-md">
+                <!-- Icons on the left side -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/>
+                </svg>
+                <!-- Main button text and icon -->
+                <span>How we works</span>
+            </button>
+        </div>
+
+        <div class="text-center mb-8 p-10">
+            <h1 class="text-3xl font-bold mb-2">Our Works Process</h1>
+            <p class="text-gray-600 mb-8">Our work process involves detailed planning, creative design, and
+                meticulous
+                execution. We collaborate closely with clients to ensure every project<br>
+                meets their needs and exceeds expectations, resulting in exceptional, personalized outcomes.</p>
+        </div>
+       
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-5 mb-2">
+            <!-- Card 1 -->
+            <div class="w-full h-full shadow-lg bg-[#E7C1D3]">
+                <img src="assets/concept.png" alt="">
+                <div class="card-body">
+                    <h2 class="card-title">Concept</h2>
+                    <p>Our concept merges creativity and practicality for innovative design solutions.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="w-full h-full bg-[#EFDA6E] shadow-lg">
+                <img src="assets/flow-chart.png" alt="">
+                <div class="card-body">
+                    <h2 class="card-title">Design Process</h2>
+                    <p>Our design process blends creativity, planning, and execution for perfection.</p>
+                    <div class="card-actions justify-end">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-[#A4DAC3] w-full h-full shadow-lg">
+                <img src="assets/vision.png" alt="">
+                <div class="card-body">
+                    <h2 class="card-title">Supervision</h2>
+                    <p>We provide meticulous supervision to ensure project quality and precision.</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="w-full h-full bg-[#77AAEA] shadow-lg">
+                <img src="assets/budget-planning.png" alt="Budget Planning" class="object-contain">
+                <div class="card-body">
+                    <h2 class="card-title">Budget Planning</h2>
+                    <p>We optimize budget planning to ensure cost-effective, quality-driven solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Responsive hoy na -->
+    <section>
+            <div>
+                <div class="flex flex-col items-center mt-10">
+                    <button class="btn text-[#494949] text-sm font-bold w-50 h-10 rounded-3xl flex items-center space-x-2 gap-2  bg-[#ABEF5F] shadow-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                             stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/>
+                        </svg>
+                        <span>Explore our Latest works</span>
+                    </button>
+                </div>
+       
+            <div class="text-center mb-8 p-35 gap-10">
+                <h1 class="text-5xl font-bold mb-2">Our Latest Portfolio</h1>
+                <p class="text-gray-600 mb-8">Explore our latest portfolio, showcasing innovative projects and creative solutions. Witness our commitment to excellence through diverse designs and <br>
+                     successful outcomes, reflecting our passion for delivering top-quality results.</p>
+                <div class="flex justify-center">
+                    <div class="bg-white rounded-full p-4 shadow-md">
+    
+                    </div>
+                </div>
+        </div>
+        <div class="mx-10">
+            <div class="flex justify-center">
+                <div class="flex">
+                    <img src="assets/img1.png">
+                    <div>
+                        <div tabindex="0" class="border-base-300 bg-base-200 border flex items-center p-4 rounded-lg shadow-md bg-white border-none">
+                            <div class="collapse-title text-xl font-medium">
+                                Commercial
+                                <p class="block text-sm font-normal text-gray-600 mt-1">Discover unmatched comfort with our luxury mattresses.<br>
+                                     Enjoy a restful night's sleep and wake up refreshed<br>
+                                      every morning. Try it now.</p>
+                                      <button class="btn bg-white text-black text-xl font-bold w-50 h-15 rounded-3xl justify-end space-x-2">
+                                        <div class="flex items-center space-x-2">
+                                        </div>
+                                       <span>View Details</span>
+                                        <div class="flex items-center justify-center bg-[#ABEF5F] rounded-full p-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                                 class="text-black w-5 h-5">
+                                                <path fill-rule="evenodd"
+                                                      d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                                      clip-rule="evenodd"/>
+                                            </svg>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img2.png">
+                </div>
+            </div>
+        <div>    
+            <div class="flex justify-center p-10">
+                <div class="flex">
+                    <img src="assets/img3.png">
+                    <img src="assets/img4.png">
+                    <div>
+                        <div tabindex="0" class="border-base-300 bg-base-200 border flex items-center p-4 rounded-lg shadow-md bg-white border-none">
+                            <div class="collapse-title text-xl font-medium">
+                                Commercial
+                                <p class="block text-sm font-normal text-gray-600 mt-1">Discover unmatched comfort with our luxury mattresses.<br>
+                                     Enjoy a restful night's sleep and wake up refreshed<br>
+                                      every morning. Try it now.</p>
+                                      <button class="btn bg-white text-black text-xl font-bold w-50 h-15 rounded-3xl justify-end space-x-2">
+                                        <div class="flex items-center space-x-2">
+                                        </div>
+                                       <span>View Details</span>
+                                        <div class="flex items-center justify-center bg-[#ABEF5F] rounded-full p-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                                 class="text-black w-5 h-5">
+                                                <path fill-rule="evenodd"
+                                                      d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                                      clip-rule="evenodd"/>
+                                            </svg>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="assets/img5.png">
+                </div>
+            </div>
+        </div>
+    </div>
+            </div> 
+    </section>
+
+<section class="container m-auto p-8 bg-gray-50 w-full">
+    <!-- container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center responsive hoy na -->
+        <div class="border-4 border-red-950">
+        <div class="text-center mb-8 p-15 flex flex-col items-center mt-10">
+            <button class="btn text-[#494949] text-sm font-bold w-55 h-4 rounded-3xl flex items-center space-x-2 gap-2 bg-[#ABEF5F] shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/>
+                </svg>
+                <!-- Main button text and icon icon ar iktu upore thakbe -->
+                <span>Rinterio News</span>
+            </button>
+            <h1 class="text-5xl font-bold mb-2">Read Our Articles and News</h1>
+            <p class="text-gray-600 mb-8">Stay informed with our latest articles and news. Discover insightful content, expert opinions, and up-to-date information on various topics,<br>
+                 helping you stay ahead and well-informed in today's fast-paced world.</p>
+                 <div class="border-4 border-blue-950 flex gap-9">
+                    <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                          <img
+                            src="assets/article1.png"
+                            alt="" />
+                        </figure>
+                        <div class="card-body">
+                            <div class="flex justify-evenly p-2 mx-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                                  </svg>
+                                  <p class="text-sm">August 14, 2024</p>
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                  </svg>
+                                  <p>By Admin</p>
+                               </div>
+                              
+                          <h2 class="card-title">A beautiful house with charm and elegance.</h2>
+                          <p>A beautiful house design features elegant architecture, spacious rooms, and lush gardens.</p>
+                          <button class="btn bg-white text-gray-600  text-xl font-bold w-50 h-15 rounded-3xl justify-start space-x-2">
+                            <div class="flex items-center space-x-2">
+                            </div>
+                           <span>Read More</span>
+                            <div class="flex items-center justify-center bg-[#ABEF5F] rounded-full p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                     class="text-black w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                          d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                          clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                        
+                        </div>
+                      </div>
+                      <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                          <img
+                          src="assets/article2.png"
+                            alt="" />
+                        </figure>
+                        <div class="card-body">
+                            <div class="flex justify-evenly p-2 mx-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                                  </svg>
+                                  <p class="text-sm">August 14, 2024</p>
+                                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                  </svg>
+                                  <p>By Admin</p>
+                               </div>                              
+                          <h2 class="card-title">A pristine white house with modern, sleek design</h2>
+                          <p>The white house features a pristine, modern design with sleek architectural details.</p>
+                          <button class="btn bg-white text-gray-600  text-xl font-bold w-50 h-15 rounded-3xl justify-start space-x-2">
+                            <div class="flex items-center space-x-2">
+                            </div>
+                           <span>Read More</span>
+                            <div class="flex items-center justify-center bg-[#ABEF5F] rounded-full p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                     class="text-black w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                          d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                          clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                
+                        </div>
+                      </div>
+                      <div class="card bg-base-100 w-96 shadow-xl">
+                        <figure>
+                          <img
+                          src="assets/article3.png"
+                            alt="" />
+                        </figure>
+                        <div class="card-body">
+                           <div class="flex justify-evenly p-2 mx-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                              </svg>
+                              <p class="text-sm">August 14, 2024</p>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                              </svg>
+                              <p>By Admin</p>
+                           </div>
+                              
+                          <h2 class="card-title">A unique house with an integrated car design.</h2>
+                          <p>The unique house features an innovative design that integrates a car seamlessly.</p>
+                          <button class="btn bg-white text-gray-600  text-xl font-bold w-50 h-15 rounded-3xl justify-start space-x-2">
+                            <div class="flex items-center space-x-2">
+                            </div>
+                           <span>Read More</span>
+                            <div class="flex items-center justify-center bg-[#ABEF5F] rounded-full p-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                     class="text-black w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                          d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                                          clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                    
+                        
+                        </div>
+                      </div>
+                    </div>
+                 </div>
+            </div>
+      
+          
+</section>
+    
+
+    <section class="p-8 bg-gray-50 w-full bg-cover bg-center" style="background-image: url('assets/bg.jpg');">
+        <div class="container mx-auto">
+            <!-- Button Section -->
+            <div class="flex flex-col items-center mt-10">
+                <button class="btn text-[#494949] text-sm font-bold w-50 h-10 rounded-3xl flex items-center space-x-2 gap-2 bg-[#ABEF5F] shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/>
+                    </svg>
+                    <!-- Main button text and icon -->
+                    <span>Let's Connect</span>
+                </button>
+            </div>
+    
+            <!-- Heading and Description -->
+            <div class="text-center mb-8 p-10">
+                <h1 class="text-3xl font-bold mb-2">Let’s Discuss Next Project</h1>
+                <p class="text-gray-600 mb-8">Let’s discuss your next project to explore ideas, define goals, and
+                    develop a tailored plan. We’re excited to collaborate and turn your<br>
+                    vision into a successful, well-executed reality.</p>
+            </div>
+    
+           
+              
+            <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" placeholder="First Name*" class="p-4 md:p-6 rounded-[64px]">
+                <input type="text" placeholder="Last Name*" class="p-4 md:p-6 rounded-[64px]">
+                <input type="number" placeholder="Pone Number*" class="p-4 md:p-6 rounded-[64px]">
+                <input type="email" placeholder="Email Number*" class="p-4 md:p-6 rounded-[64px]">
+                <textarea class="md:col-span-2 p-2 md:p-6 rounded-3xl md:rounded-[64px] h-[240px]" placeholder="Write your massage here"></textarea>
+                <button class="btn md:col-span-2 bg-[#ABEF5F] rounded-[32px]">
+                  Send mail
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8"
+                         style="transform: rotate(15deg);">
+                        <path fill-rule="evenodd"
+                              d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm.53 5.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.72-1.72v6.89a.75.75 0 0 0 1.5 0v-6.89l1.72 1.72a.75.75 0 1 0 1.06-1.06l-3-3Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                    <i class="fa-solid fa-arrow-right font-semibold -rotate-45"></i>
+                  </div>
+                </button>
+              </form>                    
+    </section>  
+</main>
+
+
+
+
+<footer class="footer bg-[#1C1C1C] text-neutral-content p-10 justify-center">
+    <div class="flex flex-col items-center">
+        <!-- Logo and Branding Section -->
+        <div class="flex flex-col items-center mb-8">
+            <!-- Container for Logo, Branding Text, and Paragraph -->
+            <div class="text-center md-4">
+                <!-- Badge -->
+               <div class="flex justify-center">
+                <div class="badge badge-primary bg-[#ABEF5F] text-black rounded-full w-10 h-10 flex items-center justify-center border-[#ABEF5F]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                              d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                              clip-rule="evenodd"/>
+                    </svg>
+                        
+                
+                </div> 
+                <a class="text-[#E9E9E9] font-bold text-3xl mb-4">Rinterio</a>
+               </div>
+                <p class="text-sm text-neutral-content max-w-md mx-4 text-[#737373]">
+                    Rinterio offers innovative solutions and premium content, focusing on creativity to enhance client experiences.
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-20 mb-8 text-[#E9E9E9]">
+            <nav>
+                <h6 class="footer-title">Home</h6>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Services</h6>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Portfolio</h6>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Blogs</h6>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Contact Us</h6>
+            </nav>
+        </div>
+        <button class="btn bg-[#ABEF5F] text-black text-xl font-bold w-50 h-10 rounded-3xl flex items-center space-x-2">
+            <span>Book Consult</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10" style="transform: rotate(15deg);">
+                <path fill-rule="evenodd"
+                      d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm.53 5.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.72-1.72v6.89a.75.75 0 0 0 1.5 0v-6.89l1.72 1.72a.75.75 0 1 0 1.06-1.06l-3-3Z"
+                      clip-rule="evenodd"/>
+            </svg>
+        </button>
+    </div>
+
+       
+       
+        
+       
+       
+    </div>
+</footer>
+    
+
+
+
+
+
+</body>
+</html>
